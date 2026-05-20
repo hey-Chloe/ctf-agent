@@ -1,8 +1,0 @@
-{
-  "llm": {
-    "provider": "ollama",
-    "model": "qwen2.5:1.5b",
-    "api_base": "http://localhost:11434",
-    "temperature": 0.0
-  }
-}
