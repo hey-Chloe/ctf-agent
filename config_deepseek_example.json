@@ -1,0 +1,33 @@
+{
+  "llm": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "api_key": "YOUR_DEEPSEEK_API_KEY",
+    "api_base": "https://api.deepseek.com",
+    "temperature": 0.1,
+    "timeout": 120,
+    "max_retries": 2
+  },
+  "executor": {
+    "type": "docker",
+    "container_name": "ctf-target",
+    "workdir": "/work",
+    "default_timeout": 120,
+    "ssh_host": "",
+    "ssh_user": "",
+    "ssh_port": 22,
+    "ssh_key_path": ""
+  },
+  "agent": {
+    "max_steps": 30,
+    "checkpoint_dir": "checkpoints",
+    "log_dir": "logs",
+    "debug": false
+  },
+  "ctfd": {
+    "enabled": false,
+    "api_url": "",
+    "api_token": "",
+    "validate_ssl": true
+  }
+}

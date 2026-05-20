@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+config.local.json
+logs/*.log
+checkpoints/*.json
+attachments/*
+!attachments/.gitkeep
